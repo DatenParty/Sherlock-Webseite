@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Open%20Sans%20Condensed%3A300%7CArimo%3Aregular%7CArimo%3Aregular%7CArimo%3Aregular&subset=latin");
+fieldset{border:0;margin:0;padding:0}figure,p{margin:0}
+#cc-checkout-steps:after,.cc-tp-main:after
+                {clear:both;content:"";display:table}
+                html{font-size:62.5%;
+                  -webkit-text-size-adjust:100%;
+                  -ms-text-size-adjust:100%}
+                body,button,input,select,textarea
+                {font-size:16px;line-height:1.5}
+
+                    .number,
+                      h3{font-size:24px;font-size:2.4rem;line-height:1.25}
+                      h2{font-size:32px;font-size:3.2rem;line-height:1.25}
+                      h1{font-size:48px;font-size:4.8rem;line-height:1.05}@-webkit-keyframes fadeIn{0%,80%{opacity:0}100%{opacity:1}}@-moz-keyframes fadeIn{0%,80%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%,80%{opacity:0}100%{opacity:1}}body{background-color:#f6f1ef;color:#3a4642;font-family:Arimo,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;font-size:16px;line-height:1.5;margin:0}
+/*Blog Header Siteheader*/
+                    .j-rss .rssFeedTitle,.j-rss h1,h1,h2,h3,h4{margin:0}h1{color:#766DF3;font-family:"Open Sans Condensed",Helvetica,Arial,sans-serif}
+/*Blog 2.header*/
+                    .j-rss .rssFeedTitle,.j-rss h1,h2,h3{font-weight:300}a:link,a:visited{color:#6488FB;-moz-transition:color .3s ease-in;-webkit-transition:color .3s ease-in;transition:color .3s ease-in}a:link img,a:visited
+/*Blog 2.header, hover*/
+                      img{border:0}a:active,a:focus,a:hover{color:#64FBE2}strong{font-weight:700}sub,sup{vertical-align:baseline;position:relative;top:-.4em}sub{top:.4em}
+                    .cc-tp-gutter{width:1015px;margin:0px}
+                    .cc-tp-main{margin-top:10px}
+                    .content-options{background-color:#f6f1ef;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;float:right;padding:20px;width:720px}
+/*footer position, sice*/
+                    .cc-tp-footer{margin-top:10px;padding:20px 80px}
+                    .navigation-colors{padding:5px 0;font-family:"Open Sans Condensed",Helvetica,Arial,sans-serif;font-size:20px}
+
+#cc-checkout-shipping-address-form textarea,
+                                  .datetime{color:#676f6c;float:left;margin-bottom:10px;text-transform:uppercase;width:100%}
+                                  .datetime span{float:left;margin:0 3px 0 0}
+                                  .j-blogarticle a h2{font-family:"Open Sans Condensed",Helvetica,Arial,sans-serif}
+                                  .j-blog-header{text-decoration:none}
+/*blog line*/
+                                  .j-hr hr{border-bottom:1px solid #86c7af;margin:5px 0}
+
+
+#cc-checkout-shipping-address-form textarea:hover,
+                                .navigation-colors{background-color:#383737}
+                                .navigation-colors a,
+                                .navigation-colors a:link,
+                                .navigation-colors a:visited{font-family:"Open Sans Condensed",sans-serif,"google";font-size:20px;font-weight:normal;font-style:normal;text-transform:uppercase}
+                                .navigation-colors li a:hover,
+                                .navigation-colors li a:active,
+                                .navigation-colors li a:focus,
+                                .navigation-colors li.cc-nav-current>a:link,
+                                .navigation-colors li.cc-nav-current>a:visited,
+                                .navigation-colors li.cc-nav-parent>a:link,
+                                .navigation-colors li.cc-nav-parent>a:visited{background-color:#6da7de}
+                                .content-options{background-color:#D2D2D2}
+                                .content-options h1:not(.cc-within-single-module-element):not(.j-blog-headline),
+                                .content-options .j-rss h1 a:link,
+                                .content-options .j-rss h1 a:visited{font-weight:normal;font-style:normal}
+                                .content-options h2:not(.j-blog-headline):not(.j-blog-comment-counter){font-weight:normal;font-style:normal}
+                                .content-options h3{font-weight:normal;font-style:normal}
+#cc-checkout-billing-address-form textarea,
+                                .footer-options{font-family:"Arimo",sans-serif;background-color:#383737;color:#5882FA;font-size:16px}
+                                .footer-options a:link,
+                                .footer-options a:visited
+#cc-website-logo{}
+              .j-blog-headline{font-weight:normal;font-style:normal}
+              .body { background-color: #F1F1F1;background-position: right top;background-attachment: scroll;background-size: auto;background-repeat: repeat-y; }
+
+
+
+/*Navigation*/
+.navi-colors{padding:10px 0;
+                    font-family:"Open Sans Condensed",Helvetica,Arial,sans-serif;
+                    font-size:20px}
+.navi-colors ul{list-style:none;margin:0;padding:0}
+.navi-colors a:link,
+.navi-colors a:visited{color:#F1F1F1;
+                              text-decoration:none;
+                              padding:/*height*/10px /*width*/15px;
+                              -moz-border-radius:4px;
+                              -webkit-border-radius:4px;
+                              border-radius:6px;
+                              -moz-transition:background-color .3s ease-in,color .3s ease-in;-webkit-transition:background-color .3s ease-in,color .3s ease-in;transition:background-color .3s ease-in,color .3s ease-in;text-transform:uppercase}
+.navi-colors .j-nav-current>a:link,
+.navi-colors .j-nav-current>a:visited,
+.navi-colors .j-nav-parent>a:link,
+.navi-colors .j-nav-parent>a:visited,
+.navi-colors a:active,
+.navi-colors a:focus,
+.navi-colors a:hover{background:#86c7af;color:#f6f1ef}
+.navi-colors li{display:inline-block;margin:10px 10px 10px 0}
+
+.cc-tb{width:900px;margin:0 auto;;}
+.j-nav-current>a:visited{background-color:#a9d7c6;
+                          color:#f6f1ef;
+                          text-shadow:1px 1px 0 rgba(246,241,239,.1)}

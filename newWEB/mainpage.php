@@ -6,6 +6,8 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<script src="/newWEB/js/jquery-3.2.1.min.js" language="javascript">
+	</script>
 	<title>Datenparty - Ihr Nachrichtendienst</title>
     <style>
         html,body{
@@ -23,6 +25,34 @@
             padding-left: 4%;
             padding-right: 2%;
         }
+		nav li ul {
+			display: none;
+			position: absolute;
+			z-index: 2;
+			top: 100px;
+			left: 150px;
+			with: 150px; 
+			background-color: rgb(139,167,255);
+		}
+		nav li ul li {
+			display: block 
+			cursor: pointer;
+			list-style-type: none;
+			clear: both;
+			 color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 24px;
+		}
+		nav li {
+			display: inline;
+			cursor: pointer;
+			list-style-type: none;
+			 color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 24px;
+		}
         .colorr{
             background-color: orange;
         }
@@ -108,10 +138,19 @@
     <div class="nav">
         <center>
             <nav>
-                <a class="link" href="themenübersicht.html">Themen</a>
-                <a class="link" href="mainpage.php">Aktuell</a>
-                <a class="link" href="datenparty-forum.html">Forum</a>
-                <a class="link" href="kontakt.html">Kontakt</a>
+				<li>Themen<ul>
+					<li>Sport</li>
+					<li>Kultur</li>
+					<li>Politik</li>
+					<li>Finanzen</li>
+					<li>Unterhaltung</li>
+					<li>Digital</li>
+					<li>Lifestyle</li>
+					<li>Weiteres</li>
+					</ul></li>
+					<li><a class="link" href="mainpage.php">Aktuell</a></li>
+					<li><a class="link" href="datenparty-forum.html">Forum</a></li>
+					<li><a class="link" href="kontakt.html">Kontakt</a></li>
                 <img class="link icon" src="search.png"/>
             </nav>
         </center>
@@ -135,5 +174,16 @@
       <div class="comp"></div>
       <br><br>
       <div class="containerr"><h2>Darum rügt Macron „Monsieur Trömp“ auf Englisch</h2> Stand09.06.2017<br>Französische Politiker müssen eigentlich Französisch sprechen. Doch Emmanuel Macron experimentiert derzeit mit englischen Tweets und Reden. Kritiker werfen ihm Verrat vor. Aber Macron hat einen Plan.</div>
+	  <script>
+		$( document ).ready(function() {
+			$("nav li").click(function(){
+				if($(this).children("ul").is(":visible") == true){
+				$(this).children("ul").hide();	
+				}else{ 
+				$(this).children("ul").show();
+				}
+			});
+		});	
+	  </script>
   </body>
 </html>  

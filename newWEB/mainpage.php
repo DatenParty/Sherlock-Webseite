@@ -74,13 +74,24 @@
             padding: 20px;
             display: block;
         }
+        .containerr {
+            background-color: orange;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 100%;
+            display: block;
+        }
         
         .container img {
-            width: 50%;
-            height: 50%;
             float: left;
             padding-right: 10vw;
-            
+            max-height: 15vw;
+        }
+        .comp{
+            width: 100vw;
+            height: 10px;
+            background-color: orange;
         }
     </style>
   </head>	
@@ -104,25 +115,20 @@
             $json=file_get_contents( "http://maschini.de:5001/"); 
             $test=json_decode($json, true);
             foreach($test as $testt){
-                if($testt["imglink"] == ""){
-                    echo "<div class='container'><img allign='left' src='https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+                if($testt["imglink"] == "" && strlen($testt["article"]) < 200){
+                    echo "<div class='containerr'><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp2'></div>";
+                }
+                else if($testt["imglink"] != "" && strlen($testt["article"]) < 200){
+                    echo "<div class='container'> <img allign='left' src='".$testt["imglink"]."'/><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp2'></div>";
                 }
                 else{
-                    echo "<div class='container'> <img allign='left' src='".$testt["imglink"]."'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+                    echo "<div class='container'> <img allign='left' src='".$testt["imglink"]."'/><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp'></div>";
                 }
             }
         ?>
-      <div class="container">
-          <img src="img.jpg" align="left">
-          <h2>Trump zu Aussage unter Eid bereit</h2>
-            Stand 10.06.2017 06:51 Uhr<br>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-      </div>
+      <div class="container"> <img allign="left" src="http://img.zeit.de/politik/deutschland/2017-06/de-maiziere-gesichtserkennung/wide__822x462"><h2>De Maizière will Überwachung ausweiten</h2> Stand16:49<br>Automatische Gesichtserkennung an Bahnhöfen, das Knacken von WhatsApp-Nachrichten - Innenminister Thomas de Maizière (CDU) fordert mehr Überwachungsmöglichkeiten.</div>
+      <div class="comp"></div>
       <br><br>
-      <div class="container">
-          <h2>Trump zu Aussage unter Eid bereit</h2>
-            Stand 10.06.2017 06:51 Uhr<br>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-      </div>
+      <div class="containerr"><h2>Darum rügt Macron „Monsieur Trömp“ auf Englisch</h2> Stand09.06.2017<br>Französische Politiker müssen eigentlich Französisch sprechen. Doch Emmanuel Macron experimentiert derzeit mit englischen Tweets und Reden. Kritiker werfen ihm Verrat vor. Aber Macron hat einen Plan.</div>
   </body>
 </html>  

@@ -1,6 +1,6 @@
         html,body{
-            margin: 0px;
-            border: 0px;
+            margin: 0;
+            border: 0;
             width: 100%;
             font-family: 'Roboto';
         }
@@ -19,11 +19,11 @@
 			z-index: 2;
 			top: 69px;
 			left: 250px;
-			with: 150px; 
+			width: 150px;
 			background-color: darkblue;
 		}
 		nav li ul li {
-			display: block 
+			display: block;
 			cursor: pointer;
 			list-style-type: none;
 			clear: both;
@@ -108,4 +108,8 @@
         .comp2{
             width: 100vw;
             height: 40px;
+        }
+
+        .image  {
+            padding: 20px 50px;
         }

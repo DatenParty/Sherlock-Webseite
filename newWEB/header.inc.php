@@ -6,9 +6,9 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 	<link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16"> 
-    <link rel="stylesheet" href="/newWEB/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<script src="/newWEB/js/jquery-3.2.1.min.js" language="javascript">
+	<script src="js/jquery-3.2.1.min.js" language="javascript">
 	</script>
 	<title>Datenparty - Ihr Nachrichtendienst</title>
   </head>	

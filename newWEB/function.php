@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-	<title>Datenparty - Ihr Nachrichtendienst</title>
-      		<style>
+<?php
+$json=file_get_contents( "http://maschini.de:5001/"); 
+$test=json_decode($json, true);
+foreach($test as $testt){
+    echo $testt["author"];
+}
+?>
+<style>
     .left{
         float: left;
         width: 38%;
@@ -18,23 +17,9 @@
         width: 60%;
     }
 </style>
-  </head>	
-  <body>
-	<img src="data_horn_0256.png" alt="Datenparty" height="256" width="256">
-    <h1>Datenparty</h1>
-	<nav>
-		<a href="themenübersicht.html">Themen</a>
-		<a href="aktuelles.html">Aktuell</a>
-		<a href="datenparty-forum.html">Forum</a>
-		<a href="kontakt.html">Kontakt</a>
-	</nav>
-
     <img class="left" src="img.jpg" />
 <div class="right">
     <h2>Trump zu Aussage unter Eid bereit</h2>
     <h5>Stand 10.06.2017 06:51 Uhr</h5>
     <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h5>
 </div>
-	
-  </body>
-</html>  

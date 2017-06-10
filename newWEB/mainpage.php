@@ -109,7 +109,7 @@
         <center>
             <nav>
                 <a class="link" href="themenübersicht.html">Themen</a>
-                <a class="link" href="aktuelles.html">Aktuell</a>
+                <a class="link" href="mainpage.php">Aktuell</a>
                 <a class="link" href="datenparty-forum.html">Forum</a>
                 <a class="link" href="kontakt.html">Kontakt</a>
                 <img class="link icon" src="search.png"/>

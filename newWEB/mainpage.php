@@ -65,6 +65,20 @@
         .right{
         }
         
+        .container {
+            background-color: orange;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        
+        .container img {
+            width: 50%;
+            height: 50%;
+            float: left;
+            padding-right: 10vw;
+            
+        }
     </style>
   </head>	
   <body>
@@ -83,9 +97,23 @@
             </nav>
         </center>
     </div>
-      <div class="colorr">  
-      <img class="left img" src="img.jpg"/>
-            <h2>Trump zu Aussage unter Eid bereit</h2>
+      <?php
+            $json=file_get_contents( "http://maschini.de:5001/"); 
+            $test=json_decode($json, true);
+            foreach($test as $testt){
+                echo "<div class='colorr'> <img class='left img' src='img.jpg'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+            }
+        ?>
+      <div class="container">
+          <img src="img.jpg" align="left">
+          <h2>Trump zu Aussage unter Eid bereit</h2>
+            Stand 10.06.2017 06:51 Uhr<br>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </div>
+      <br><br>
+      <div class="container">
+          <img src="img.jpg" align="left">
+          <h2>Trump zu Aussage unter Eid bereit</h2>
             Stand 10.06.2017 06:51 Uhr<br>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </div>

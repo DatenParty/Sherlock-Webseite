@@ -125,7 +125,7 @@
         }
         .comp2{
             width: 100vw;
-            height: 20px;
+            height: 40px;
             background-color: orange;
         }
     </style>

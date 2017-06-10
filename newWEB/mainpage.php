@@ -5,12 +5,14 @@
     <meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<title>Datenparty - Ihr Nachrichtendienst</title>
     <style>
         html,body{
             margin: 0px;
             border: 0px;
             width: 100%;
+            font-family: 'Roboto';
         }
         .left{
             float: left;
@@ -70,6 +72,7 @@
             height: 100%;
             box-sizing: border-box;
             padding: 20px;
+            display: block;
         }
         
         .container img {
@@ -101,7 +104,12 @@
             $json=file_get_contents( "http://maschini.de:5001/"); 
             $test=json_decode($json, true);
             foreach($test as $testt){
-                echo "<div class='colorr'> <img class='left img' src='img.jpg'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+                if($testt["imglink"] == ""){
+                    echo "<div class='container'><img allign='left' src='https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+                }
+                else{
+                    echo "<div class='container'> <img allign='left' src='".$testt["imglink"]."'/><h2>".$testt["heading"]."</h2> Stand".$testt["date"]."<br>".$testt["article"]."</div>";
+                }
             }
         ?>
       <div class="container">
@@ -112,7 +120,6 @@
       </div>
       <br><br>
       <div class="container">
-          <img src="img.jpg" align="left">
           <h2>Trump zu Aussage unter Eid bereit</h2>
             Stand 10.06.2017 06:51 Uhr<br>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

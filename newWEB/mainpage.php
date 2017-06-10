@@ -29,17 +29,17 @@
 			display: none;
 			position: absolute;
 			z-index: 2;
-			top: 100px;
-			left: 150px;
+			top: 75px;
+			left: 250px;
 			with: 150px; 
-			background-color: rgb(139,167,255);
+			background-color: darkblue;
 		}
 		nav li ul li {
 			display: block 
 			cursor: pointer;
 			list-style-type: none;
 			clear: both;
-			 color: white;
+			color: white;
             text-decoration: none;
             margin-left: 15px;
             font-size: 24px;
@@ -48,13 +48,13 @@
 			display: inline;
 			cursor: pointer;
 			list-style-type: none;
-			 color: white;
+			color: white;
             text-decoration: none;
             margin-left: 15px;
             font-size: 24px;
 		}
         .colorr{
-            background-color: orange;
+            <!--background-color: orange;-->
         }
         .right{
             float: right;

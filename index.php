@@ -135,7 +135,7 @@ echo "Alle News";
                             <div id="cc-m-9497616221" class="j-module n j-blogSelection">
                                 <div class="blogselection">
                                     <div class="n clearover j-blogarticle">
-                                        <a href="<?php echo($test[$amount][" link "]); ?>" class="j-blog-header">
+                                        <a href="<?php echo($test[$amount]["link"]);?>" class="j-blog-header">
                                             <h2 class="j-blog-headline"><?php echo($test[$amount]["author"]); ?></h2>
                                         </a>
 

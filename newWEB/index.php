@@ -52,11 +52,8 @@
             text-decoration: none;
             margin-left: 15px;
             font-size: 24px;
-		}
-        .colorr{
-            <!--background-color: orange;-->
-        }
-        .right{
+			
+		.right{
             float: right;
             width: 55%;
         }
@@ -98,14 +95,12 @@
         }
         
         .container {
-            background-color: orange;
             height: 100%;
             box-sizing: border-box;
             padding: 20px;
             display: block;
         }
         .containerr {
-            background-color: orange;
             height: 100%;
             box-sizing: border-box;
             padding: 20px;
@@ -121,12 +116,10 @@
         .comp{
             width: 100vw;
             height: 10px;
-            background-color: orange;
         }
         .comp2{
             width: 100vw;
             height: 40px;
-            background-color: orange;
         }
     </style>
   </head>	
@@ -148,7 +141,7 @@
 					<li>Lifestyle</li>
 					<li>Weiteres</li>
 					</ul></li>
-					<li><a class="link" href="mainpage.php">Aktuell</a></li>
+					<li><a class="link" href="index.php">Aktuell</a></li>
 					<li><a class="link" href="datenparty-forum.html">Forum</a></li>
 					<li><a class="link" href="kontakt.html">Kontakt</a></li>
                 <img class="link icon" src="search.png"/>

@@ -5,10 +5,11 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<script src="/newWEB/js/jquery-3.2.1.min.js" language="javascript">
+	</script>
 	<title>Datenparty - Kontakt</title>
 	<style>
 		html,body {
-			background-color: orange;
 			font-family: 'Roboto';
 		}	
 		.header {
@@ -25,6 +26,26 @@
 		<img src="../logo_white.png" alt="Datenparty" height="50">
         <span class="center">Datenparty</span>
 	</div>
+    <div class="nav">
+        <center>
+            <nav>
+				<li>Themen<ul>
+					<li>Sport</li>
+					<li>Kultur</li>
+					<li>Politik</li>
+					<li>Finanzen</li>
+					<li>Unterhaltung</li>
+					<li>Digital</li>
+					<li>Lifestyle</li>
+					<li>Weiteres</li>
+					</ul></li>
+					<li><a class="link" href="index.php">Aktuell</a></li>
+					<li><a class="link" href="datenparty-forum.html">Forum</a></li>
+					<li><a class="link" href="kontakt.html">Kontakt</a></li>
+                <img class="link icon" src="search.png"/>
+            </nav>
+        </center>
+    </div>
 	<center>
 		<div>
 			<h2>Wenn sie Fragen, Probleme oder Anmerkungen zu dieser Web Seite haben, schreiben sie uns eine E-Mail</h2>
@@ -43,4 +64,17 @@
 				</form>
 		</div>
 	</center>
+	<script>
+		$( document ).ready(function() {
+			$("nav li").click(function(){
+				if($(this).children("ul").is(":visible") == true){
+				$(this).children("ul").hide();	
+				}else{ 
+				$(this).children("ul").show();
+				}
+			});
+		});	
+	</script>
 </body>
+
+</html>

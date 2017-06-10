@@ -93,6 +93,11 @@
             height: 10px;
             background-color: orange;
         }
+        .comp2{
+            width: 100vw;
+            height: 20px;
+            background-color: orange;
+        }
     </style>
   </head>	
   <body>
@@ -116,7 +121,7 @@
             $test=json_decode($json, true);
             foreach($test as $testt){
                 if($testt["imglink"] == "" && strlen($testt["article"]) < 200){
-                    echo "<div class='containerr'><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp2'></div>";
+                    echo "<div class='containerr'><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp'></div>";
                 }
                 else if($testt["imglink"] != "" && strlen($testt["article"]) < 200){
                     echo "<div class='container'> <img allign='left' src='".$testt["imglink"]."'/><h2>".$testt["heading"]."</h2> Stand ".$testt["date"]."<br>".$testt["article"]."</div><div class='comp2'></div>";

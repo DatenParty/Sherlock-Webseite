@@ -113,3 +113,15 @@
         .image  {
             padding: 20px 50px;
         }
+
+        table h2 a {
+            color: black;
+        }
+
+        table h2 a:hover {
+            text-decoration: underline;
+        }
+
+        table h2 a:visited {
+            color: black;
+        }

@@ -55,6 +55,10 @@
             background-color: black;
             text-align: center;
         }
+.black{
+    color: black !important;
+    text-align: center;
+}
         nav{
             background-color: darkblue;
             margin-top: 2px;

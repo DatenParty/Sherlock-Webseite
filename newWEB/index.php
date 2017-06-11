@@ -3,6 +3,7 @@ echo file_get_contents("header.inc.php");
 ?>
 
         <?php
+        $displayedposts = 0;
         $json = file_get_contents( "http://maschini.de:5001/alt");
         $file = json_decode($json, true);
         if(isset($_GET["category"])){
@@ -25,6 +26,7 @@ echo file_get_contents("header.inc.php");
                         echo "</td>";
                         echo "</tr>";
                         echo "</table>";
+                        $displayposts ++;
                     }
                 else{
                     
@@ -45,6 +47,9 @@ echo file_get_contents("header.inc.php");
                 echo "</tr>";
                 echo "</table>";
             }
+        }
+        if($displayedposts < 1){
+            echo "<h1 class='black'>In dieser Kategorie gibt es aktuell leider keine Neuigkeiten</h1>";
         }
         ?>
   </body>

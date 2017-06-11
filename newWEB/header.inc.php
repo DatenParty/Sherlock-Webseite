@@ -21,7 +21,7 @@
         <center>
             <nav>
 				<li>Themen<ul>
-					<li>Sport</li>
+					<li><a href="index.php?category=Sport">Sport</a></li>
 					<li>Kultur</li>
 					<li>Politik</li>
 					<li>Finanzen</li>

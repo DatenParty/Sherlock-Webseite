@@ -5,8 +5,14 @@ echo file_get_contents("header.inc.php");
         <?php
         $json = file_get_contents( "http://maschini.de:5001/alt");
         $file = json_decode($json, true);
-        $category = $_GET["category"];
         if(isset($_GET["category"])){
+        $category = $_GET["category"];
+        $category = htmlspecialchars($category);
+        }
+        else{
+            $category = "";
+        }
+        if($category != ""){
             foreach ($file as $entry) {
                     if($_GET["category"] == $entry["category"]){
                         echo "<table align=\"center\" width=\"1000px\" style='padding: 50px 0'>";

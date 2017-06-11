@@ -17,7 +17,7 @@
 			display: none;
 			position: absolute;
 			z-index: 2;
-			top: 69px;
+			top: 90px;
 			left: 325px;
 			width: 170px;
 			background-color: rgb(139,167,255);
@@ -58,6 +58,8 @@
         nav{
             background-color: darkblue;
             margin-top: 2px;
+			padding-top: 10px;
+			height: 40px; 
         }
         .center{
             margin-bottom: 50%;

@@ -125,3 +125,6 @@
         table h2 a:visited {
             color: black;
         }
+.links{
+    color: white !important;
+}

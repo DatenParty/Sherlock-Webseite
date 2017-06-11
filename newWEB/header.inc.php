@@ -21,13 +21,13 @@
         <center>
             <nav>
 				<li>Themen<ul>
-					<li><a href="index.php?category=Sport">Sport</a></li>
-					<li><a href="index.php?category=Kultur">Kultur</a></li>
-					<li><a href="index.php?category=Politik">Politik</a></li>
-					<li><a href="index.php?category=Finanzen">Finanzen</a></li>
-					<li><a href="index.php?category=Unterhaltung">Unterhaltung</a></li>
-					<li><a href="index.php?category=Digital">Digital</a></li>
-					<li><a href="index.php?category=Lifestyle">Lifestyle</a></li>
+					<li><a href="index.php?category=Sport" class="links">Sport</a></li>
+					<li><a href="index.php?category=Kultur" class="links">Kultur</a></li>
+					<li><a href="index.php?category=Politik" class="links">Politik</a></li>
+					<li><a href="index.php?category=Finanzen" class="links">Finanzen</a></li>
+					<li><a href="index.php?category=Unterhaltung" class="links">Unterhaltung</a></li>
+					<li><a href="index.php?category=Digital" class="links">Digital</a></li>
+					<li><a href="index.php?category=Lifestyle" class="links">Lifestyle</a></li>
 					<li>Weiteres</li>
 					</ul></li>
 					<li><a class="link" href="index.php">Aktuell</a></li>

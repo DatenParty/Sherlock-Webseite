@@ -125,7 +125,6 @@
         table h2 a:visited {
             color: black;
         }
-a:link, a:hover, a:visited{
-    color: white;
-    text-decoration: none;
+.links{
+    color: white !important;
 }

@@ -31,7 +31,7 @@
 					<li>Weiteres</li>
 					</ul></li>
 					<li><a class="link" href="index.php">Aktuell</a></li>
-					<li><a class="link" href="datenparty-forum.html">Forum</a></li>
+					<li><a class="link" href="datenparty-forum.php">Forum</a></li>
 					<li><a class="link" href="kontakt.php">Kontakt</a></li>
                 <img class="link icon" src="search.png"/>
             </nav>

@@ -22,12 +22,12 @@
             <nav>
 				<li>Themen<ul>
 					<li><a href="index.php?category=Sport">Sport</a></li>
-					<li>Kultur</li>
-					<li>Politik</li>
-					<li>Finanzen</li>
-					<li>Unterhaltung</li>
-					<li>Digital</li>
-					<li>Lifestyle</li>
+					<li><a href="index.php?category=Kultur">Kultur</a></li>
+					<li><a href="index.php?category=Politik">Politik</a></li>
+					<li><a href="index.php?category=Finanzen">Finanzen</a></li>
+					<li><a href="index.php?category=Unterhaltung">Unterhaltung</a></li>
+					<li><a href="index.php?category=Digital">Digital</a></li>
+					<li><a href="index.php?category=Lifestyle">Lifestyle</a></li>
 					<li>Weiteres</li>
 					</ul></li>
 					<li><a class="link" href="index.php">Aktuell</a></li>

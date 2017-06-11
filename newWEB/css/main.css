@@ -132,6 +132,24 @@
         table h2 a:visited {
             color: black;
         }
-.links{
-    color: white !important;
-}
+		.links{
+			color: white !important;
+		}
+		.forumheader {
+			background-color: rgb(139,167,255)
+		}
+		.forumposts {
+			
+		}
+		.forumpost { 
+			
+		}
+		.forumposttitle {
+			
+		}
+		.forumpostauthor {
+			
+		}
+		.forumpostdate {
+			
+		}

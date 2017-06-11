@@ -4,7 +4,7 @@ echo file_get_contents("header.inc.php");
 
         <?php
         $displayedposts = 0;
-        $json = file_get_contents( "http://maschini.de:5001/alt");
+        $json = file_get_contents( "http://maschini.de:5001/api");
         $file = json_decode($json, true);
         if(isset($_GET["category"])){
         $category = $_GET["category"];

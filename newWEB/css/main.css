@@ -161,3 +161,6 @@
 		.forumpostdate {
 			float: right;
 		}
+		.rating {
+			width: 20px;
+		}

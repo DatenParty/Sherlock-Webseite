@@ -13,7 +13,7 @@ echo file_get_contents("header.inc.php");
 				Jack Keylow
 			</span>
 			<span class="forumpostdate">
-				07.03.4018
+				07.03.2014
 			</span>
 		</li>
 		<li class="forumpost">

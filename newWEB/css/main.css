@@ -136,13 +136,21 @@
 			color: white !important;
 		}
 		.forumheader {
-			background-color: rgb(139,167,255)
+			background-color: rgb(139,167,255);
+			color: white;
+			size: 30px;
+			text-align: center;
+			padding: 4px;
 		}
 		.forumposts {
 			
 		}
 		.forumpost { 
-			
+			border: solid 2px darkblue;
+			margin-top: 4px;
+			list-style-type: none;
+			background-color: #a5c1e6;
+			padding: 4px;
 		}
 		.forumposttitle {
 			
@@ -151,5 +159,5 @@
 			
 		}
 		.forumpostdate {
-			
+			float: right;
 		}

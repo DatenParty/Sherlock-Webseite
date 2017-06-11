@@ -2,18 +2,18 @@
 echo file_get_contents("header.inc.php");
 ?>
 	<div class="forumheader">
-		Überschrift 1
+		Sport
 	</div>
 	<ul class="forumposts">
 		<li class="forumpost">
 			<span class="forumposttitle">
-				gbrgbr
+				Hello guys, I just have a question. Could you help me?
 			</span>
 			<span class="forumpostauthor">
-				Algebra heol
+				Jack Keylow
 			</span>
 			<span class="forumpostdate">
-				07.03.1967
+				07.03.4018
 			</span>
 		</li>
 		<li class="forumpost">
@@ -109,7 +109,7 @@ echo file_get_contents("header.inc.php");
 		</li>
 	</ul>
 	<div class="forumheader">
-		Überschrift 1
+		Kultur
 	</div>
 	<ul class="forumposts">
 		<li class="forumpost">
@@ -215,7 +215,7 @@ echo file_get_contents("header.inc.php");
 			</span>
 		</li>
 	</ul>	<div class="forumheader">
-		Überschrift 1
+		Politik
 	</div>
 	<ul class="forumposts">
 		<li class="forumpost">
@@ -321,7 +321,7 @@ echo file_get_contents("header.inc.php");
 			</span>
 		</li>
 	</ul>	<div class="forumheader">
-		Überschrift 1
+		Finanzen
 	</div>
 	<ul class="forumposts">
 		<li class="forumpost">

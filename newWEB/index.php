@@ -18,6 +18,7 @@ echo file_get_contents("header.inc.php");
                     if($_GET["category"] == $entry["category"]){
                         echo "<table align=\"center\" width=\"1000px\" style='padding: 50px 0'>";
                         echo "<tr>";
+						echo "<td class=\"rating\" style=\"backround-color:rgb(255,". floor(rnd(0,255)).");\"></td>";
                         echo "<td class=\"image\"><img src=\"" . ($entry["imglink"] == "" || $entry["author"] == "FAZ" ? "../black.jpeg" : $entry["imglink"]) . "\" width=\"300px\" height=\"200px\"></td>";
                         echo "<td class=\"content\">";
                         echo "<h2><a href=\"" . $entry["link"] . "\" target='blank'>" . $entry["heading"] . "</a></h2>";

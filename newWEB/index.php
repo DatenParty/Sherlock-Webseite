@@ -8,7 +8,7 @@ echo file_get_contents("header.inc.php");
         foreach ($file as $entry) {
             echo "<table align=\"center\" width=\"1000px\" style='padding: 50px 0'>";
             echo "<tr>";
-            echo "<td class=\"image\"><img src=\"" . ($entry["imglink"] == "" || $entry["author"] == "FAZ" ? "../black.jpeg" : $entry["imglink"]) . "\" width=\"300px\" height=\"200px\"></td>";
+            echo "<td class=\"image\"><img src=\"" . ($entry["imglink"] == "" || $entry["author"] == "FAZ" ? "../black.jpeg" : $entry["imglink"]) . "\" width=\"300px\" ></td>";
             echo "<td class=\"content\">";
             echo "<h2><a href=\"" . $entry["link"] . "\" target='blank'>" . $entry["heading"] . "</a></h2>";
             echo "<span>" . $entry["date"] . " " . $entry["author"] . "</span><br>";
@@ -18,16 +18,5 @@ echo file_get_contents("header.inc.php");
             echo "</table>";
         }
         ?>
-	  <script>
-		$( document ).ready(function() {
-			$("nav li").click(function(){
-				if($(this).children("ul").is(":visible") == true){
-				$(this).children("ul").hide();	
-				}else{ 
-				$(this).children("ul").show();
-				}
-			});
-		});	
-	  </script>
   </body>
 </html>  

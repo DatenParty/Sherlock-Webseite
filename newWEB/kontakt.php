@@ -19,17 +19,7 @@ echo file_get_contents("header.inc.php");
 				</form>
 		</div>
 	</center>
-	<script>
-		$( document ).ready(function() {
-			$("nav li").click(function(){
-				if($(this).children("ul").is(":visible") == true){
-				$(this).children("ul").hide();	
-				}else{ 
-				$(this).children("ul").show();
-				}
-			});
-		});	
-	</script>
+
 </body>
 
 </html>

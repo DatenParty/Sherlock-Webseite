@@ -37,3 +37,14 @@
             </nav>
         </center>
     </div>
+	<script>
+		$( document ).ready(function() {
+			$("nav li").click(function(){
+				if($(this).children("ul").is(":visible") == true){
+				$(this).children("ul").hide();	
+				}else{ 
+				$(this).children("ul").show();
+				}
+			});
+		});	
+	</script>
